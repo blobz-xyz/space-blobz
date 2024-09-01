@@ -35,7 +35,7 @@ contract SpaceBLOBzB is ERC721A, Ownable {
         string memory jsonPreImage = string.concat(
             string.concat(
                 string.concat('{"name": "Space BLOBz B #', Strings.toString(tokenId)),
-                '","description":"This NFT will then grant you access to claim $BLZ on the Base chain on September 22, 2024","image":"'
+                '","description":"$BLOBZ is blasting off into space! Exchange your $BLOBZ tokens for a coveted Space BLOBz NFT and secure your spot for the upcoming $BLZ claim on the Base chain. The NFT exchange will be open from September 5th to 18th, and the $BLZ claim will commence on September 22nd. Don\'t let this opportunity slip through your fingers!","image":"'
             ),
             baseURI
         );
