@@ -10,7 +10,7 @@ contract SpaceBLOBzB is ERC721A, Ownable {
 
     // config
     constructor(address initialOwner)
-        ERC721A("Space BLOBz B", "SPACEBLOBZB")
+        ERC721A("Space BLOBz Tier B", "SPACEBLOBZB")
         Ownable(initialOwner) {
     }
     uint256 public MAX_SUPPLY = 4_844_000;
@@ -34,7 +34,7 @@ contract SpaceBLOBzB is ERC721A, Ownable {
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
         string memory jsonPreImage = string.concat(
             string.concat(
-                string.concat('{"name": "Space BLOBz B #', Strings.toString(tokenId)),
+                string.concat('{"name": "Space BLOBz Tier B #', Strings.toString(tokenId)),
                 '","description":"$BLOBZ is blasting off into space! Exchange your $BLOBZ tokens for a coveted Space BLOBz NFT and secure your spot for the upcoming $BLZ claim on the Base chain. The NFT exchange will be open from September 5th to 18th, and the $BLZ claim will commence on September 22nd. Don\'t let this opportunity slip through your fingers!","image":"'
             ),
             baseURI
